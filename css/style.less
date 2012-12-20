@@ -4,6 +4,7 @@
 /* LESS VARIABLES
 ----------------------------------------------- */
 @primaryColor: #f1b05e;
+@secondaryColor: #e97900;
 @primaryFont: "proxima-nova", helvetica, sans-serif;
 
 
@@ -93,7 +94,7 @@ textarea {
 ----------------------------------------------- */
 #header {
   background: @primaryColor;
-  height: 456px;
+  height: 516px; /* 456 + 60 (from tab nav) */
 }
 
 #logo {
@@ -106,7 +107,8 @@ textarea {
 
   /* MENU */
   .menu ul {
-    float: right
+    float: right;
+    list-style: none;
   }
   
   .menu ul li {
@@ -117,12 +119,80 @@ textarea {
     color: #5b3a13;
     text-decoration: none;
   }
+  
+/* PROGRAM
+----------------------------------------------- */
+#program {
+  border-top: 60px solid #fff9ef;
+  border-color: rgba(255, 255, 255, .9);
+  margin-top: -60px;
+}
+
+#program .nav {
+  display: table;
+  list-style: none;
+  margin: 0 0 -19px 0;
+  padding-left: 0;
+  position: relative;
+  text-transform: uppercase;
+  top: -60px;
+  width: 100%;
+}
+
+#program .nav li {
+  border-top: 3px solid transparent;
+  display: table-cell;
+}
+
+#program .nav a {
+  color: @secondaryColor;
+  display: inline-block;
+  font-size: 24px;
+  padding: 13px 30%;
+  text-decoration: none;
+}
+
+#program .nav li.current {
+  background: #fff;
+  border-top: 3px solid @secondaryColor;
+}
+
+#program .nav a.current {
+  color: #7b7b7b;
+}
+
+.event-single {
+  border-bottom: 1px solid #EEE;
+}
+
+#program .time {
+  color: #757575;
+  float: left;
+  font-size: 14px;
+  margin-right: 20px;
+  padding-top: 7px;
+}
+
+#program h3 {
+  color: #757575;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  width: 470px; /*GF*/
+}
+
+#program .event-single-inner {
+  margin-left: 70px;
+  width: 470px; /*GF*/
+}
+
 
 /* 
 ----------------------------------------------- */
-
-/* 
------------------------------------------------ */
+#about, #directions {
+  background: #f5f1eb;
+}
 
 /* 
 ----------------------------------------------- */
