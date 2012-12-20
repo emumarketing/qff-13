@@ -73,6 +73,21 @@ textarea {
     padding: 0.2em 0;
 }
 
+/* LAYOUT
+----------------------------------------------- */
+.inner {
+  margin: 0 auto;
+  max-width: 610 / 16em;
+  .transition(@layoutTransition);
+}
+
+
+.inner-large {
+  margin: 0 auto;
+  max-width: 770 / 16em;
+  .transition(@layoutTransition);
+}
+
 
 /* HEADER
 ----------------------------------------------- */
@@ -81,13 +96,27 @@ textarea {
   height: 456px;
 }
 
-/* LAYOUT
------------------------------------------------ */
-.inner {
-  margin: 0 auto;
-  max-width: 610 / 16em;
-  .transition(@layoutTransition);
+#logo {
+  background: url(/images/logo.png) no-repeat 0 0;
+  float: left;
+  height: 62px;
+  text-indent: -999999em;
+  width: 158px; /*GF*/
 }
+
+  /* MENU */
+  .menu ul {
+    float: right
+  }
+  
+  .menu ul li {
+    display: inline-block;
+  }
+  
+  .menu a {
+    color: #5b3a13;
+    text-decoration: none;
+  }
 
 /* 
 ----------------------------------------------- */

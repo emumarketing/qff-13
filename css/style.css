@@ -491,12 +491,6 @@ textarea {
   color: #000;
   padding: 0.2em 0;
 }
-/* HEADER
------------------------------------------------ */
-#header {
-  background: #f1b05e;
-  height: 456px;
-}
 /* LAYOUT
 ----------------------------------------------- */
 .inner {
@@ -506,6 +500,40 @@ textarea {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+.inner-large {
+  margin: 0 auto;
+  max-width: 48.125em;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* HEADER
+----------------------------------------------- */
+#header {
+  background: #f1b05e;
+  height: 456px;
+}
+#logo {
+  background: url(/images/logo.png) no-repeat 0 0;
+  float: left;
+  height: 62px;
+  text-indent: -999999em;
+  width: 158px;
+  /*GF*/
+
+}
+/* MENU */
+.menu ul {
+  float: right;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu a {
+  color: #5b3a13;
+  text-decoration: none;
 }
 /* 
 ----------------------------------------------- */
