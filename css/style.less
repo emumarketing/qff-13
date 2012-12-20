@@ -5,6 +5,19 @@
 ----------------------------------------------- */
 @primaryColor: #f1b05e;
 
+
+.transition(@transition) {
+  -moz-transition: @transition;
+  -webkit-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+@layoutTransition: all 0.2s ease-in-out;
+
+
+
+
 html,
 button,
 input,
@@ -63,8 +76,28 @@ textarea {
 ----------------------------------------------- */
 #header {
   background: @primaryColor;
+  height: 456px;
 }
 
+/* LAYOUT
+----------------------------------------------- */
+.inner {
+  margin: 0 auto;
+  max-width: 610 / 16em;
+  .transition(@layoutTransition);
+}
+
+/* 
+----------------------------------------------- */
+
+/* 
+----------------------------------------------- */
+
+/* 
+----------------------------------------------- */
+
+/* 
+----------------------------------------------- */
 
 
 
