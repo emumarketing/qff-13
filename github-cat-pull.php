@@ -1,1 +1,5 @@
-<?php `git pull`;?>
+<?php `git pull`;
+  
+  echo "It works";
+  
+?>
