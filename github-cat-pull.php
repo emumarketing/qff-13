@@ -1,5 +1,5 @@
-<?php `git pull`;
+<?php `git pull origin dev`;
   
-  echo "It works, well. How about now?";
+  echo "It works.  ";
   
 ?>
