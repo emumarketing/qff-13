@@ -1,4 +1,1 @@
-<?php
-echo 'Hello!';
-
-?>
+<?php `git pull`;?>
