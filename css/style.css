@@ -512,8 +512,10 @@ textarea {
 /* HEADER
 ----------------------------------------------- */
 #header {
-  background: #f1b05e;
-  height: 516px;
+  background: #f1b05e url(/images/banner-bg.png) repeat-x 0 0;
+  border-bottom: 60px solid #fff9ef;
+  border-color: rgba(255, 255, 255, 0.9);
+  height: 456px;
   /* 456 + 60 (from tab nav) */
 
 }
@@ -541,9 +543,9 @@ textarea {
 /* PROGRAM
 ----------------------------------------------- */
 #program {
-  border-top: 60px solid #fff9ef;
-  border-color: rgba(255, 255, 255, 0.9);
-  margin-top: -60px;
+  /*   margin-top: -60px; */
+
+  border-top: 1px solid #EFEDE9;
 }
 #program .nav {
   display: table;
@@ -552,7 +554,7 @@ textarea {
   padding-left: 0;
   position: relative;
   text-transform: uppercase;
-  top: -60px;
+  top: -61px;
   width: 100%;
 }
 #program .nav li {
@@ -563,18 +565,20 @@ textarea {
   color: #e97900;
   display: inline-block;
   font-size: 24px;
-  padding: 13px 30%;
+  padding: 13px 30% 12px 30%;
   text-decoration: none;
 }
 #program .nav li.current {
   background: #fff;
   border-top: 3px solid #e97900;
+  box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1), -1px 0px 0px rgba(0, 0, 0, 0.1), 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 #program .nav a.current {
   color: #7b7b7b;
 }
 .event-single {
   border-bottom: 1px solid #EEE;
+  width: 88.52459016393442%;
 }
 #program .time {
   color: #757575;
@@ -584,6 +588,7 @@ textarea {
   padding-top: 7px;
 }
 #program h3 {
+  background: url(/images/arrows.png) no-repeat right 0;
   color: #757575;
   display: inline-block;
   font-size: 18px;
@@ -592,6 +597,9 @@ textarea {
   width: 470px;
   /*GF*/
 
+}
+#program .on h3 {
+  background: url(/images/arrows.png) no-repeat right -24px;
 }
 #program .event-single-inner {
   margin-left: 70px;

@@ -93,8 +93,10 @@ textarea {
 /* HEADER
 ----------------------------------------------- */
 #header {
-  background: @primaryColor;
-  height: 516px; /* 456 + 60 (from tab nav) */
+  background: @primaryColor url(/images/banner-bg.png) repeat-x 0 0;
+  border-bottom: 60px solid #fff9ef;
+  border-color: rgba(255, 255, 255, .9);
+  height: 456px; /* 456 + 60 (from tab nav) */
 }
 
 #logo {
@@ -123,9 +125,8 @@ textarea {
 /* PROGRAM
 ----------------------------------------------- */
 #program {
-  border-top: 60px solid #fff9ef;
-  border-color: rgba(255, 255, 255, .9);
-  margin-top: -60px;
+/*   margin-top: -60px; */
+  border-top: 1px solid #EFEDE9;
 }
 
 #program .nav {
@@ -135,7 +136,7 @@ textarea {
   padding-left: 0;
   position: relative;
   text-transform: uppercase;
-  top: -60px;
+  top: -61px;
   width: 100%;
 }
 
@@ -148,13 +149,14 @@ textarea {
   color: @secondaryColor;
   display: inline-block;
   font-size: 24px;
-  padding: 13px 30%;
+  padding: 13px 30% 12px 30%;
   text-decoration: none;
 }
 
 #program .nav li.current {
   background: #fff;
   border-top: 3px solid @secondaryColor;
+  box-shadow: 0px -1px 0px rgba(0, 0, 0, .1), -1px 0px 0px rgba(0, 0, 0, .1), 1px 0px 0px rgba(0, 0, 0, .1);
 }
 
 #program .nav a.current {
@@ -163,6 +165,7 @@ textarea {
 
 .event-single {
   border-bottom: 1px solid #EEE;
+  width: 540 / 610% * 100;
 }
 
 #program .time {
@@ -174,12 +177,17 @@ textarea {
 }
 
 #program h3 {
+  background: url(/images/arrows.png) no-repeat right 0;
   color: #757575;
   display: inline-block;
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
   width: 470px; /*GF*/
+}
+
+#program .on h3 {
+  background: url(/images/arrows.png) no-repeat right -24px;
 }
 
 #program .event-single-inner {

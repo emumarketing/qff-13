@@ -105,7 +105,7 @@ $('.event-single').click(function() {
 		});			
 		$(this).addClass('on').children('.event-single-inner').slideDown('fast');
 	} else {
-  	$(this).addClass('on').children('.event-single-inner').slideUp('fast');
+  	$(this).removeClass('on').children('.event-single-inner').slideUp('fast');
 	}
 });
   
