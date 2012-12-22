@@ -131,10 +131,23 @@ h2 {
     text-decoration: none;
   }
   
+  /* BANNER */
+  #banner p {
+    text-align: center;
+  }
+  
+  #banner p span {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0.5em 0 0 rgba(0, 0, 0, 0.2), -.5em 0 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    display: inline;
+    font-size: 44px;
+    font-weight: 700;
+  }
+  
 /* PROGRAM
 ----------------------------------------------- */
 #program {
-/*   margin-top: -60px; */
   border-top: 1px solid #EFEDE9;
   padding-bottom: 84px;
 }
@@ -166,7 +179,7 @@ h2 {
 #program .nav li.current {
   background: #fff;
   border-top: 3px solid @secondaryColor;
-  box-shadow: 0px -1px 0px rgba(0, 0, 0, .1), -1px 0px 0px rgba(0, 0, 0, .1), 1px 0px 0px rgba(0, 0, 0, .1);
+  box-shadow: 0px -1px 0px rgba(0, 0, 0, .1), -1px 0px 0px rgba(0, 0, 0, .1), 1px 0px 0px rgba(0, 0, 0, .1); /*GF*/
 }
 
 #program .nav a.current {
@@ -193,7 +206,7 @@ h2 {
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
-  width: 470px; /*GF*/
+  width: 470 / 540% * 100;
 }
 
 #program .on h3 {
@@ -202,7 +215,8 @@ h2 {
 
 #program .event-single-inner {
   margin-left: 70px;
-  width: 470px; /*GF*/
+
+  width: 470 / 540% * 100;
 }
 
 
