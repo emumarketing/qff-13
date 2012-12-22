@@ -99,10 +99,6 @@ $(document).ready(function(){
 
 $('.event-single').click(function() {
 	if($(this).children('.event-single-inner').is(":hidden")) {
-		$('.event-single-inner').each(function() {
-			$(this).slideUp('fast');
-			$(this).parent().removeClass('on');
-		});			
 		$(this).addClass('on').children('.event-single-inner').slideDown('fast');
 	} else {
   	$(this).removeClass('on').children('.event-single-inner').slideUp('fast');
