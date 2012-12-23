@@ -522,11 +522,11 @@ h2 {
 ----------------------------------------------- */
 #header {
   background: #f1b05e url(../images/banner-bg.png) repeat-x center 0;
-  border-bottom: 60px solid #fff9ef;
-  border-color: rgba(255, 255, 255, 0.9);
-  height: 456px;
+  height: 516px;
   /* 456 + 60 (from tab nav) */
 
+  width: 100%;
+  z-index: -99999;
 }
 #logo {
   background: url(../images/logo.png) no-repeat 0 0;
@@ -565,23 +565,29 @@ h2 {
 /* PROGRAM
 ----------------------------------------------- */
 #program {
-  border-top: 1px solid #EFEDE9;
   padding-bottom: 84px;
 }
-#program .nav {
-  /*   display: table; */
-
-  list-style: none;
-  margin: 0 0 -19px 0;
-  padding-left: 0;
+#tabs-nav {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #EFEDE9;
+  height: 60px;
   position: relative;
-  text-transform: uppercase;
   top: -61px;
+}
+#program .nav {
+  list-style: none;
+  margin-bottom: -19px;
+  padding-left: 0;
+  text-transform: uppercase;
   width: 100%;
 }
 #program .nav li {
   border-top: 3px solid transparent;
   float: left;
+  -moz-transition: all 0.05s ease-in-out;
+  -webkit-transition: all 0.05s ease-in-out;
+  -o-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
   width: 33.33333%;
 }
 #program .nav a {
@@ -598,6 +604,14 @@ h2 {
   border-top: 3px solid #e97900;
   box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1), -1px 0px 0px rgba(0, 0, 0, 0.1), 1px 0px 0px rgba(0, 0, 0, 0.1);
   /*GF*/
+
+}
+#program .nav li:hover {
+  background: #f9f9f9;
+  border-top: 3px solid #CCC;
+}
+#program .nav li:hover a {
+  /*   border-bottom: 2px solid @primaryColor; */
 
 }
 #program .nav a.current {
