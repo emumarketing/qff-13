@@ -69,7 +69,7 @@
     };
     
     $.organicTabs.defaultOptions = {
-        "speed": 300
+        "speed": 100
     };
     
     $.fn.organicTabs = function(options) {

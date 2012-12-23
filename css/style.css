@@ -476,6 +476,7 @@ hr {
 }
 img {
   vertical-align: middle;
+  max-width: 100%;
 }
 fieldset {
   border: 0;
@@ -609,8 +610,9 @@ h2 {
   color: #757575;
   float: left;
   font-size: 14px;
-  margin-right: 20px;
+  margin-right: 3.7037037037037033%;
   padding-top: 7px;
+  width: 11.11111111111111%;
 }
 #program h3 {
   background: url(../images/arrows.png) no-repeat right 0;
@@ -619,13 +621,13 @@ h2 {
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
-  width: 87.03703703703704%;
+  width: 85.18518518518519%;
 }
 #program .on h3 {
   background: url(../images/arrows.png) no-repeat right -24px;
 }
 #program .event-single-inner {
-  margin-left: 70px;
+  margin-left: 14.893617021276595%;
   width: 87.03703703703704%;
 }
 /* ABOUT
@@ -634,15 +636,65 @@ h2 {
   background: #f5f1eb;
   padding-top: 36px;
 }
-/* 
+/* FOOTER
 ----------------------------------------------- */
+#footer {
+  background: #e6e4e1;
+}
+#footer ul {
+  padding: 0;
+}
+#footer li {
+  float: left;
+  height: 60px;
+  list-style: none;
+  width: 33.33333%;
+}
+#footer li a {
+  background: url(../images/logo-sprite.png) no-repeat center 0;
+  display: inline-block;
+  height: 60px;
+  opacity: .4;
+  text-indent: -999999em;
+  width: 100%;
+}
+#footer li a:hover {
+  opacity: 1;
+}
+#footer .bijou a {
+  background-position: center 0;
+}
+#footer .cf a {
+  background-position: center -83px;
+}
+#footer .emu-mark a {
+  background-position: center -158px;
+}
 /* 
 ----------------------------------------------- */
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  
+@media only screen and (max-width: 610px) {
+  .inner {
+    max-width: 90%;
+  }
+  #program .nav.inner {
+    max-width: 100%;
+  }
+  #program .nav a {
+    font-size: 21px;
+    padding: 14px 0 15px 0;
+  }
+  .event-single {
+    width: 100%;
+  }
+  #program .time {
+    width: 16.666666666666664%;
+  }
+  #program h3 {
+    width: 79.62962962962963%;
+  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
   

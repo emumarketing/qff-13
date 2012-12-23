@@ -55,6 +55,7 @@ hr {
 
 img {
     vertical-align: middle;
+    max-width: 100%;
 }
 
 fieldset {
@@ -198,8 +199,9 @@ h2 {
   color: #757575;
   float: left;
   font-size: 14px;
-  margin-right: 20px;
+  margin-right: 20 / 540% * 100;
   padding-top: 7px;
+  width: 60 / 540% * 100;
 }
 
 #program h3 {
@@ -209,7 +211,7 @@ h2 {
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
-  width: 470 / 540% * 100;
+  width: 460 / 540% * 100;
 }
 
 #program .on h3 {
@@ -217,8 +219,7 @@ h2 {
 }
 
 #program .event-single-inner {
-  margin-left: 70px;
-
+  margin-left: 70 / 470% * 100;
   width: 470 / 540% * 100;
 }
 
@@ -230,9 +231,47 @@ h2 {
   padding-top: 36px;
 }
 
-/* 
+/* FOOTER
 ----------------------------------------------- */
+#footer {
+  background: #e6e4e1;
+}
 
+#footer ul {
+  padding: 0;
+}
+
+#footer li {
+  float: left;
+  height: 60px;
+  list-style: none; 
+  width: 33.33333%;
+}
+
+#footer li a {
+  background: url(../images/logo-sprite.png) no-repeat center 0;
+  display: inline-block;
+  height: 60px;
+  opacity: .4;
+  text-indent: -999999em;
+  width: 100%;
+}
+
+#footer li a:hover {
+  opacity: 1;
+}
+
+#footer .bijou a {
+  background-position: center 0;
+}
+
+#footer .cf a {
+  background-position: center -83px;
+}
+
+#footer .emu-mark a {
+  background-position: center -158px;
+}
 /* 
 ----------------------------------------------- */
 
@@ -251,7 +290,32 @@ h2 {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 610px) {
+
+  .inner {
+    max-width: 90%;
+  }
+  
+  #program .nav.inner {
+    max-width: 100%;
+  }
+  
+  #program .nav a {
+    font-size: 21px;
+    padding: 14px 0 15px 0;
+  }
+  
+  .event-single {
+    width: 100%;
+  }
+  
+  #program .time {
+    width: 90 / 540% * 100;
+  }
+  
+  #program h3 {
+    width: 430 / 540% * 100;
+  }
 
 }
 
