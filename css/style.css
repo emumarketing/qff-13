@@ -622,9 +622,10 @@ h2 {
   width: 88.52459016393442%;
 }
 #program .time {
-  color: #757575;
+  color: #999;
   float: left;
   font-size: 14px;
+  font-weight: 300;
   margin-right: 3.7037037037037033%;
   padding-top: 7px;
   width: 11.11111111111111%;
@@ -636,6 +637,7 @@ h2 {
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
+  margin-bottom: 0;
   width: 85.18518518518519%;
 }
 #program .on h3 {
@@ -644,6 +646,35 @@ h2 {
 #program .event-single-inner {
   margin-left: 14.893617021276595%;
   width: 87.03703703703704%;
+}
+#program .event-single-inner p {
+  color: #757575;
+}
+#program .meta {
+  color: #ccc;
+  font-weight: 300;
+  font-size: 14px;
+}
+#program .cat,
+#program .duration {
+  color: #A79480;
+}
+.video-container {
+  height: 0;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /* ABOUT
 ----------------------------------------------- */
