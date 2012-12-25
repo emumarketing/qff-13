@@ -578,7 +578,8 @@ h2 {
 #program .nav {
   list-style: none;
   padding-left: 0;
-  text-transform: uppercase;
+  /*   text-transform: uppercase; */
+
   width: 100%;
 }
 #program .nav li {
@@ -591,10 +592,10 @@ h2 {
   width: 33.33333%;
 }
 #program .nav a {
-  color: #e97900;
+  color: #7B7B7B;
   display: inline-block;
-  font-size: 24px;
-  padding: 13px 0 12px 0;
+  font-size: 21px;
+  padding: 15px 0 14px 0;
   text-align: center;
   text-decoration: none;
   width: 100%;
@@ -615,7 +616,7 @@ h2 {
 
 }
 #program .nav a.current {
-  color: #7b7b7b;
+  color: #666;
 }
 .event-single {
   border-bottom: 1px solid #EEE;
@@ -634,7 +635,7 @@ h2 {
 }
 #program h3 {
   background: url(../images/arrows.png) no-repeat right 4px;
-  color: #B0783C;
+  color: #e97900;
   display: inline-block;
   font-size: 21px;
   font-weight: 500;
