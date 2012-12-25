@@ -571,12 +571,12 @@ h2 {
   background: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid #EFEDE9;
   height: 60px;
+  margin-bottom: -19px;
   position: relative;
-  top: -61px;
+  top: -60px;
 }
 #program .nav {
   list-style: none;
-  margin-bottom: -19px;
   padding-left: 0;
   text-transform: uppercase;
   width: 100%;
@@ -619,6 +619,7 @@ h2 {
 }
 .event-single {
   border-bottom: 1px solid #EEE;
+  margin-bottom: -1px;
   width: 88.52459016393442%;
 }
 #program .time {
@@ -631,11 +632,11 @@ h2 {
   width: 11.11111111111111%;
 }
 #program h3 {
-  background: url(../images/arrows.png) no-repeat right 0;
-  color: #757575;
+  background: url(../images/arrows.png) no-repeat right 4px;
+  color: #B0783C;
   display: inline-block;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   margin-bottom: 12px;
   width: 85.18518518518519%;
@@ -643,21 +644,36 @@ h2 {
 #program .on h3 {
   background: url(../images/arrows.png) no-repeat right -24px;
 }
-#program .event-single-inner {
+.event-single-inner {
   margin-left: 14.893617021276595%;
   width: 87.03703703703704%;
 }
-#program .event-single-inner p {
+.event-single-inner p {
   color: #757575;
-}
-#program .meta {
-  color: #ccc;
   font-weight: 300;
-  font-size: 14px;
 }
-#program .cat,
-#program .duration {
-  color: #A79480;
+.meta {
+  margin: 8px 0 24px 0;
+}
+.meta span {
+  /*   color: #ccc; */
+
+  background: url(../images/meta.png) no-repeat 0 5px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-indent: 25px;
+}
+.meta .duration {
+  background-position: 0 -19px;
+}
+.cat,
+.duration {
+  color: #8f8f8f;
+}
+.description {
+  line-height: 24px;
 }
 .video-container {
   height: 0;
