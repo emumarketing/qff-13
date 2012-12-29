@@ -1,6 +1,51 @@
 // Tab script based on http://css-tricks.com/organic-tabs/
 
+
 (function($) {
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(44.04401046666311, -123.085418343544);
+    var center = new google.maps.LatLng(44.04401046666311, -123.08641834355);
+    var styles = [
+      {
+        stylers: [
+          { hue: "#eeece9" },
+          { saturation: -40 }
+        ]
+      },{
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [
+          { lightness: 100 },
+          { visibility: "simplified" }
+        ]
+      },{
+        featureType: "road",
+        elementType: "labels",
+        stylers: [
+          { visibility: "simplified" }
+        ]
+      }
+    ];
+    
+    
+    
+    var mapOptions = {
+      center: center,
+      zoom: 16,
+      disableDefaultUI: true,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: styles
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      icon: "../images/map-marker.png",
+      map: map
+    });
+  }
+    
+  initialize();
+    
 
     $.organicTabs = function(el, options) {
     

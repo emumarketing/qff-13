@@ -13,6 +13,9 @@
         <script type="text/javascript" src="//use.typekit.net/ixq4ooy.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVgGAiX5sMXNmkkFGTB1vfcxJzfomDYmk&sensor=false">
+    </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -26,7 +29,7 @@
     	<ul>
     		<li><a href="#program">Program</a></li>
     		<li><a href="#about">About</a></li>
-    		<li><a href="#directions">Directions</a></li>
+    		<li><a href="#venue">Venue</a></li>
     	</ul>
     </nav>
     <div id="banner">
@@ -201,9 +204,18 @@
     </ul>
   </div>
 
-  <div class="directions inner clearfix">
-    <h2>Directions</h2>
-    <img src="http://api.tiles.mapbox.com/v3/emumark.map-hctodorv/pin-m-cinema+48C(-123.085418343544,44.04401046666311)/-123.085418343544,44.04401046666311,16/400x300.png" alt="Bijou Cinemas map" />
+  <div id="venue" class="directions inner clearfix">
+    <h2>Venue</h2>
+<!--     <img src="http://api.tiles.mapbox.com/v3/emumark.map-hctodorv/pin-m-cinema+48C(-123.085418343544,44.04401046666311)/-123.085418343544,44.04401046666311,16/400x300.png" alt="Bijou Cinemas map" /> -->
+
+    <div id="map-container">
+      <div class="map-info">
+        <h3>Bijou Cinemas</h3>
+        <p>492 East 13th Avenue Eugene, OR 97401</p>
+      </div>
+      <div id="map_canvas" style="width:100%; height: 390px"></div>
+    </div>
+
   </div>
 </section>
 

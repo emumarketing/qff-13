@@ -495,10 +495,15 @@ textarea {
 /* TYPE
 ----------------------------------------------- */
 h2 {
-  text-align: center;
+  color: #6d5a45;
   font-weight: 400;
   font-size: 33px;
   letter-spacing: .03em;
+  margin-bottom: 45px;
+  text-align: center;
+}
+ul {
+  padding-left: 20px;
 }
 /* LAYOUT
 ----------------------------------------------- */
@@ -595,7 +600,7 @@ h2 {
   color: #7B7B7B;
   display: inline-block;
   font-size: 21px;
-  padding: 15px 0 14px 0;
+  padding: 13px 0 14px 0;
   text-align: center;
   text-decoration: none;
   width: 100%;
@@ -706,6 +711,37 @@ h2 {
 }
 .directions {
   padding-bottom: 120px;
+}
+#about h3 {
+  color: #999;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 2em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+#map-container {
+  position: relative;
+}
+.map-info {
+  background: rgba(50, 202, 172, 0.95);
+  padding: 10px 5%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24.8%;
+  z-index: 9999;
+}
+#map-container h3 {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin: 16px 0;
+  text-align: left;
+}
+#map-container p {
+  color: #fff;
+  font-size: 14px;
 }
 /* FOOTER
 ----------------------------------------------- */
