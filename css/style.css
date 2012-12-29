@@ -615,7 +615,7 @@ ul {
 }
 #program .nav li:hover {
   background: #f9f9f9;
-  border-top: 3px solid #CCC;
+  border-top: 3px solid #aaa;
 }
 #program .nav li:hover a {
   /*   border-bottom: 2px solid @primaryColor; */
