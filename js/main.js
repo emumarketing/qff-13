@@ -2,50 +2,6 @@
 
 
 (function($) {
-  function initialize() {
-    var myLatlng = new google.maps.LatLng(44.04401046666311, -123.085418343544);
-    var center = new google.maps.LatLng(44.04401046666311, -123.08641834355);
-    var styles = [
-      {
-        stylers: [
-          { hue: "#eeece9" },
-          { saturation: -40 }
-        ]
-      },{
-        featureType: "road",
-        elementType: "geometry",
-        stylers: [
-          { lightness: 100 },
-          { visibility: "simplified" }
-        ]
-      },{
-        featureType: "road",
-        elementType: "labels",
-        stylers: [
-          { visibility: "simplified" }
-        ]
-      }
-    ];
-    
-    
-    
-    var mapOptions = {
-      center: center,
-      zoom: 16,
-      disableDefaultUI: true,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styles: styles
-    };
-    var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      icon: "../images/map-marker.png",
-      map: map
-    });
-  }
-    
-  initialize();
-    
 
     $.organicTabs = function(el, options) {
     
@@ -126,6 +82,65 @@
 })(jQuery);
 
 $(document).ready(function(){
+
+// Smooth Scrolling from http://css-tricks.com/snippets/jquery/smooth-scrolling/#li-comment-94058
+$('#header a[href*=#]').click(function() {
+  if (location.pathname.replace(/^\//,") == this.pathname.replace(/^\//,")
+  && location.hostname == this.hostname) {
+    var $target = $(this.hash);
+    $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+    if ($target.length) {
+      var targetOffset = $target.offset().top;
+      $('html,body').animate({scrollTop: targetOffset}, {duration:600});
+      return false;
+    }
+  }
+
+});
+
+function initialize() {
+  var myLatlng = new google.maps.LatLng(44.04401046666311, -123.085418343544);
+  var center = new google.maps.LatLng(44.04401046666311, -123.08641834355);
+  var styles = [
+    {
+      stylers: [
+        { hue: "#eeece9" },
+        { saturation: -40 }
+      ]
+    },{
+      featureType: "road",
+      elementType: "geometry",
+      stylers: [
+        { lightness: 100 },
+        { visibility: "simplified" }
+      ]
+    },{
+      featureType: "road",
+      elementType: "labels",
+      stylers: [
+        { visibility: "simplified" }
+      ]
+    }
+  ];
+  
+  
+  
+  var mapOptions = {
+    center: center,
+    zoom: 16,
+    disableDefaultUI: true,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: styles
+  };
+  var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    icon: "../images/map-marker.png",
+    map: map
+  });
+}
+  
+initialize();
 
 // Init tab script  
   $("#tabs").organicTabs();
