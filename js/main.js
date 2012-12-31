@@ -135,7 +135,7 @@ function initialize() {
   var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
   var marker = new google.maps.Marker({
     position: myLatlng,
-    icon: "../images/map-marker.png",
+    icon: "/images/map-marker.png",
     map: map
   });
 }
