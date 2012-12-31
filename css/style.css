@@ -495,12 +495,16 @@ textarea {
 /* TYPE
 ----------------------------------------------- */
 h2 {
-  color: #6d5a45;
-  font-weight: 400;
-  font-size: 33px;
-  letter-spacing: .03em;
+  /*   color: @thirdColor; */
+
+  color: #555;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 3px;
   margin-bottom: 45px;
+  padding-bottom: 21px;
   text-align: center;
+  text-transform: uppercase;
 }
 ul {
   padding-left: 20px;
@@ -586,7 +590,7 @@ ul {
 /* PROGRAM
 ----------------------------------------------- */
 #program {
-  padding-bottom: 84px;
+  padding-bottom: 99px;
 }
 #tabs-nav {
   background: rgba(255, 255, 255, 0.9);
@@ -719,7 +723,12 @@ ul {
 /* ABOUT
 ----------------------------------------------- */
 #about {
-  background: #faf8f5;
+  background: #f5f5f5;
+  border-bottom: 1px solid #E9E9E9;
+}
+#about,
+#venue {
+  padding-bottom: 36px;
   padding-top: 36px;
 }
 .our-story {
@@ -729,12 +738,16 @@ ul {
   padding-bottom: 120px;
 }
 #about h3 {
-  color: #999;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin: 2em 0;
-  text-align: center;
-  text-transform: uppercase;
+  color: #555;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 1.5em 0;
+  /* text-transform: uppercase; */
+
+  font-size: 18px;
+}
+#venue {
+  background: #faf8f5;
 }
 #map-container {
   position: relative;
