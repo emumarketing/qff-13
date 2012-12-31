@@ -146,6 +146,7 @@ initialize();
   $("#tabs").organicTabs();
 
 	// Single event slider
+/*
 	function hideAllInner() {
 		$('.event-single-inner').each(function() {
 			$(this).hide();
@@ -153,10 +154,12 @@ initialize();
 	}
 	
 	hideAllInner();
+*/
 	
 // On load show the first inner item
 /* $('#feb-twelve :first-child').addClass('on').children('.event-single-inner').slideDown('slow'); */
 
+/*
 $('.event-single').click(function() {
 	if($(this).children('.event-single-inner').is(":hidden")) {
 		$(this).addClass('on').children('.event-single-inner').slideDown('fast');
@@ -164,6 +167,7 @@ $('.event-single').click(function() {
   	$(this).removeClass('on').children('.event-single-inner').slideUp('fast');
 	}
 });
+*/
   
     
 });

@@ -513,7 +513,7 @@ ul {
 ----------------------------------------------- */
 .inner {
   margin: 0 auto;
-  max-width: 38.125em;
+  max-width: 33.75em;
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -627,7 +627,9 @@ ul {
 }
 #program .nav li.current {
   background: #fff;
-  border-top: 3px solid #e97900;
+  border-top: 3px solid #aaa;
+  /* @secondaryColor; */
+
   box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1), -1px 0px 0px rgba(0, 0, 0, 0.1), 1px 0px 0px rgba(0, 0, 0, 0.1);
   /*GF*/
 
@@ -643,37 +645,49 @@ ul {
 #program .nav a.current {
   color: #666;
 }
+/* SINGLE */
 .event-single {
-  border-bottom: 1px solid #EEE;
-  margin-bottom: -1px;
-  width: 88.52459016393442%;
-  cursor: pointer;
+  /*     margin-bottom: 12px; */
+
+  border-bottom: 3px solid #f8f8f8;
+  padding-bottom: 9px;
+  margin-bottom: 16px;
+  width: 100%;
 }
 #program .time {
-  color: #999;
+  color: #a9a9a9;
   float: left;
   font-size: 14px;
   font-weight: 300;
   margin-right: 3.7037037037037033%;
   padding-top: 7px;
+  font-style: italic;
   width: 11.11111111111111%;
 }
 #program h3 {
-  background: url(../images/arrows.png) no-repeat right 4px;
-  color: #e97900;
+  /*   background: url(../images/arrows.png) no-repeat right 4px; */
+
+  color: #7a6a60;
   display: inline-block;
-  font-size: 21px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
+  /*     letter-spacing: 1px; */
+
   line-height: 24px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   margin-top: 18px;
-  width: 85.18518518518519%;
+  /*     width: 460 / 540% * 100; */
+
 }
 #program .on h3 {
-  background: url(../images/arrows.png) no-repeat right -24px;
+  /*   background: url(../images/arrows.png) no-repeat right -24px; */
+
 }
 .event-single-inner {
+  /*     border-bottom: 1px solid #eee; */
+
   margin-left: 14.893617021276595%;
+  padding-bottom: 21px;
   width: 85.18518518518519%;
 }
 .event-single-inner p {
@@ -681,17 +695,18 @@ ul {
   font-weight: 300;
 }
 .meta {
-  font-style: italic;
-  margin: 8px 0 24px 0;
+  /*     font-style: italic; */
+
+  margin: 8px 0 19px 0;
 }
 .meta span {
   background: url(../images/meta.png) no-repeat 0 5px;
   display: inline-block;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 24px;
   text-indent: 20px;
-  margin-right: 25px;
+  margin-right: 15px;
 }
 .meta .duration {
   background-position: 0 -17px;
