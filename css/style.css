@@ -659,8 +659,9 @@ ul {
   font-weight: 300;
   margin-right: 3.7037037037037033%;
   padding-top: 7px;
-  font-style: italic;
-  width: 11.11111111111111%;
+  /*     font-style: italic; */
+
+  width: 14.814814814814813%;
 }
 #program h3 {
   color: #4B5755;
@@ -682,7 +683,7 @@ ul {
 .event-single-inner {
   /*     border-bottom: 1px solid #eee; */
 
-  margin-left: 14.893617021276595%;
+  margin-left: 19.148936170212767%;
   padding-bottom: 21px;
   width: 85.18518518518519%;
 }
@@ -858,16 +859,15 @@ ul {
     width: 100%;
   }
   #program .time {
-    /*     width: 90 / 540% * 100; */
-  
-    margin-right: 9.25925925925926%;
+    width: 27.77777777777778%;
+    margin-right: 0%;
   }
   #program h3 {
-    width: 79.62962962962963%;
+    width: 72.22222222222221%;
   }
   .event-single-inner {
-    margin-left: 20.212765957446805%;
-    width: 80.85106382978722%;
+    margin-left: 27.659574468085108%;
+    width: 72.3404255319149%;
   }
   /* VENUE 
   ----------------------------------------------- */
