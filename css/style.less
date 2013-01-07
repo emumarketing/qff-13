@@ -4,7 +4,7 @@
 /* LESS VARIABLES
 ----------------------------------------------- */
 @primaryColor: #f1b05e;
-@secondaryColor: #e97900;
+@secondaryColor: #FF783F;
 @thirdColor: #6d5a45;
 @accentColor: #32caac;
 @primaryFont: "proxima-nova", helvetica, sans-serif;
@@ -210,7 +210,7 @@ ul {
 
 #program .nav li.current {
   background: #fff;
-  border-top: 3px solid #aaa; /* @secondaryColor; */
+  border-top: 3px solid @secondaryColor;
   box-shadow: 0px -1px 0px rgba(0, 0, 0, .1), -1px 0px 0px rgba(0, 0, 0, .1), 1px 0px 0px rgba(0, 0, 0, .1); /*GF*/
 }
 
@@ -441,7 +441,22 @@ ul {
    Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 700px) {
+
+/* HEADER
+----------------------------------------------- */
+#logo {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+  /* MENU */
+  .menu ul {
+    float: none;
+  }
+
+
 
   .inner {
     max-width: 90%;
