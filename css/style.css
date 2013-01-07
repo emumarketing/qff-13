@@ -538,7 +538,7 @@ ul {
   z-index: -99999;
 }
 #logo {
-  background: url(../images/logo.png) no-repeat 0 0;
+  background: url(../images/logo.png) no-repeat center 0;
   float: left;
   height: 106px;
   margin: 0;
@@ -571,7 +571,7 @@ ul {
   -o-transition: background 0.1s ease-in-out;
   transition: background 0.1s ease-in-out;
 }
-.menu a:hover {
+.no-touch .menu a:hover {
   background: rgba(255, 255, 255, 0.4);
 }
 /* BANNER */
@@ -632,7 +632,7 @@ ul {
   /*GF*/
 
 }
-#program .nav li:hover {
+.no-touch #program .nav li:hover {
   background: #f9f9f9;
   border-top: 3px solid #aaa;
 }
@@ -663,12 +663,10 @@ ul {
   width: 11.11111111111111%;
 }
 #program h3 {
-  /*   background: url(../images/arrows.png) no-repeat right 4px; */
-
-  color: #555;
+  color: #4B5755;
   display: inline-block;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
   /*     letter-spacing: 1px; */
 
   line-height: 24px;
@@ -807,7 +805,7 @@ ul {
   text-indent: -999999em;
   width: 100%;
 }
-#footer li a:hover {
+.no-touch #footer li a:hover {
   opacity: 1;
 }
 #footer .bijou a {
@@ -819,22 +817,32 @@ ul {
 #footer .emu-mark a {
   background-position: center -158px;
 }
-/* 
------------------------------------------------ */
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 @media only screen and (max-width: 700px) {
   /* HEADER
   ----------------------------------------------- */
+  #header {
+    height: 456px;
+  }
   #logo {
     float: none;
-    display: block;
     margin: 0 auto;
+    width: 100%;
   }
   /* MENU */
   .menu ul {
     float: none;
+    text-align: center;
+  }
+  /* BANNER */
+  #banner p {
+    padding-top: 0;
+  }
+  #banner p span {
+    font-size: 30px;
+    line-height: 1.25em;
   }
   .inner {
     max-width: 90%;
@@ -844,17 +852,37 @@ ul {
   }
   #program .nav a {
     font-size: 21px;
-    padding: 14px 0 15px 0;
+    padding: 14px 0 13px 0;
   }
   .event-single {
     width: 100%;
   }
   #program .time {
-    width: 16.666666666666664%;
+    /*     width: 90 / 540% * 100; */
+  
+    margin-right: 9.25925925925926%;
   }
   #program h3 {
     width: 79.62962962962963%;
   }
+  .event-single-inner {
+    margin-left: 20.212765957446805%;
+    width: 80.85106382978722%;
+  }
+  /* VENUE 
+  ----------------------------------------------- */
+  .map-info {
+    width: 90.5%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* HEADER
+  ----------------------------------------------- */
+  /*
+  #logo {
+    background-size: 70%;
+  }
+  */
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
   
