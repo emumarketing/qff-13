@@ -771,11 +771,29 @@ a:focus {
 #venue {
   background: #faf8f5;
 }
-/*
+#venue .info {
+  float: left;
+  width: 30%;
+}
+#venue .info h3 {
+  font-size: 16px;
+  margin-top: 0;
+}
+#venue .info p {
+  background: url(../images/logo-sprite.png) no-repeat 0 70px;
+  background-size: 100%;
+  color: #666;
+  display: inline-block;
+  font-size: 14px;
+  height: 16px;
+  line-height: 19.5px;
+  padding-bottom: 120px;
+}
 #map-container {
+  float: right;
+  width: 65%;
   position: relative;
 }
-*/
 /*
 .map-info {
   background: fade(@accentColor, 95%);
