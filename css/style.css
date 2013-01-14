@@ -905,8 +905,9 @@ a:focus {
   }
   /* VENUE 
   ----------------------------------------------- */
-  .map-info {
-    width: 90.5%;
+  #venue .info,
+  #map-container {
+    width: 98%;
   }
 }
 @media only screen and (max-width: 400px) {
