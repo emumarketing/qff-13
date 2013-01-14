@@ -122,9 +122,17 @@ function initialize() {
       ]
     }
   ];
+
+/*
+  var contentString = '<div id="content">'+
+      '<p>Bijou Cinemas <br /> 492 East 13th Avenue, Eugene OR<p>' + 
+      '</div>';
   
-  
-  
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+*/
+
   var mapOptions = {
     center: center,
     zoom: 16,
@@ -136,8 +144,16 @@ function initialize() {
   var marker = new google.maps.Marker({
     position: myLatlng,
     icon: "images/map-marker.png",
-    map: map
+    map: map,
+    title: "Bijou Art Cinemas"
   });
+  
+/*
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+*/
+  
 }
   
 initialize();

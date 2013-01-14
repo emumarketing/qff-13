@@ -501,7 +501,7 @@ h2 {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 3px;
-  margin-bottom: 45px;
+  margin-bottom: 24px;
   padding-bottom: 21px;
   text-align: center;
   text-transform: uppercase;
@@ -517,6 +517,7 @@ a:visited {
 a:hover,
 a:focus {
   color: #ff783f;
+  text-decoration: underline;
 }
 /* LAYOUT
 ----------------------------------------------- */
@@ -770,11 +771,14 @@ a:focus {
 #venue {
   background: #faf8f5;
 }
+/*
 #map-container {
   position: relative;
 }
+*/
+/*
 .map-info {
-  background: rgba(50, 202, 172, 0.95);
+  background: fade(@accentColor, 95%);
   padding: 10px 5%;
   position: absolute;
   left: 0;
@@ -782,6 +786,7 @@ a:focus {
   width: 24.8%;
   z-index: 9999;
 }
+
 #map-container h3 {
   color: #fff;
   font-weight: 800;
@@ -789,10 +794,12 @@ a:focus {
   margin: 16px 0;
   text-align: left;
 }
+
 #map-container p {
   color: #fff;
   font-size: 14px;
 }
+*/
 /* FOOTER
 ----------------------------------------------- */
 #footer {
