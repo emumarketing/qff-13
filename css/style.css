@@ -586,7 +586,7 @@ a:focus {
 }
 /* BANNER */
 #banner p {
-  padding-top: 60px;
+  padding-top: 160px;
   text-align: center;
 }
 #banner p span {
@@ -594,7 +594,7 @@ a:focus {
   box-shadow: 0.5em 0 0 rgba(0, 0, 0, 0.2), -0.5em 0 0 rgba(0, 0, 0, 0.2);
   color: white;
   display: inline;
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 600;
 }
 /* PROGRAM
@@ -606,7 +606,7 @@ a:focus {
   background: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid #EFEDE9;
   height: 60px;
-  margin-bottom: -19px;
+  margin-bottom: -29px;
   position: relative;
   top: -61px;
 }
@@ -794,6 +794,7 @@ a:focus {
   width: 65%;
   position: relative;
 }
+
 /*
 .map-info {
   background: fade(@accentColor, 95%);
