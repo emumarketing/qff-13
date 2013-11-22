@@ -540,7 +540,7 @@ a:focus {
 /* HEADER
 ----------------------------------------------- */
 #header {
-  background: #32caac url(../images/banner-bg.png) repeat-x center 0;
+  background: #32caac url(../images/banner-bg-red.png) repeat-x center 0;
   height: 516px;
   /* 456 + 60 (from tab nav) */
 
@@ -548,7 +548,7 @@ a:focus {
   z-index: -99999;
 }
 #logo {
-  background: url(../images/logo.png) no-repeat center 0;
+  background: url(../images/logo-dark.png) no-repeat center 0;
   float: left;
   height: 106px;
   margin: 0;
@@ -586,8 +586,10 @@ a:focus {
 }
 /* BANNER */
 #banner p {
-  padding-top: 160px;
+  padding-top: 60px;
   text-align: center;
+  width:900px;
+  margin-left: -100px;
 }
 #banner p span {
   background: rgba(0, 0, 0, 0.2);
@@ -596,6 +598,14 @@ a:focus {
   display: inline;
   font-size: 38px;
   font-weight: 600;
+}
+
+#banner .smallerTxt {
+  color: white;
+  margin-top:-50px;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 /* PROGRAM
 ----------------------------------------------- */
@@ -788,6 +798,10 @@ a:focus {
   height: 16px;
   line-height: 19.5px;
   padding-bottom: 120px;
+}
+#venue .bottomTxt {
+  margin-top:75px;
+  margin-bottom: -75px;
 }
 #map-container {
   float: right;
