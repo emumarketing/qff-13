@@ -511,12 +511,12 @@ ul {
 }
 a,
 a:visited {
-  color: #32caac;
+  color: darkred;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #ff783f;
+  color: black;
   text-decoration: underline;
 }
 /* LAYOUT
@@ -540,7 +540,7 @@ a:focus {
 /* HEADER
 ----------------------------------------------- */
 #header {
-  background: #32caac url(../images/banner-bg.png) repeat-x center 0;
+  background:url(../images/banner-bg-red.png) repeat-x center 0;
   height: 516px;
   /* 456 + 60 (from tab nav) */
 
@@ -548,7 +548,7 @@ a:focus {
   z-index: -99999;
 }
 #logo {
-  background: url(../images/logo.png) no-repeat center 0;
+  background: url(../images/logo-dark.png) no-repeat center 0;
   float: left;
   height: 106px;
   margin: 0;
@@ -586,7 +586,7 @@ a:focus {
 }
 /* BANNER */
 #banner p {
-  padding-top: 160px;
+  padding-top: 40px;
   text-align: center;
 }
 #banner p span {
@@ -596,6 +596,13 @@ a:focus {
   display: inline;
   font-size: 38px;
   font-weight: 600;
+}
+
+p.smallHeadTxt {
+  margin-top:-20px;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
 }
 /* PROGRAM
 ----------------------------------------------- */
