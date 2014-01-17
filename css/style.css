@@ -540,7 +540,7 @@ a:focus {
 /* HEADER
 ----------------------------------------------- */
 #header {
-  background:url(../images/banner-bg-red.png) repeat-x center 0;
+  background: #b23c27 url(../images/banner-bg-red.png) repeat-x center 0;
   height: 516px;
   /* 456 + 60 (from tab nav) */
 
@@ -588,6 +588,8 @@ a:focus {
 #banner p {
   padding-top: 40px;
   text-align: center;
+  width:900px;
+  margin-left: -100px;
 }
 #banner p span {
   background: rgba(0, 0, 0, 0.2);
@@ -795,6 +797,10 @@ p.smallHeadTxt {
   height: 16px;
   line-height: 19.5px;
   padding-bottom: 120px;
+}
+#venue .bottomTxt {
+  margin-top:75px;
+  margin-bottom: -75px;
 }
 #map-container {
   float: right;
