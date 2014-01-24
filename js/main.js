@@ -98,9 +98,11 @@ $('#header a[href*=#]').click(function() {
 
 });
 
+https://maps.google.com/maps?q=Bijou+Metro,+West+Broadway,+Eugene,+OR+&hl=en&sll=44.05001,-123.093186&sspn=0.105982,0.222988&gl=us&hq=Bijou+Metro,&hnear=W+Broadway,+Eugene,+Oregon&t=m&z=15
+
 function initialize() {
-  var myLatlng = new google.maps.LatLng(44.04401046666311, -123.085418343544);
-  var center = new google.maps.LatLng(44.04401046666311, -123.08641834355);
+  var myLatlng = new google.maps.LatLng(44.05001, -123.093186);
+  var center = new google.maps.LatLng(44.05001, -123.093186);
   var styles = [
     {
       stylers: [
