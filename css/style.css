@@ -608,9 +608,18 @@ p.smallHeadTxt {
 }
 
 p.smallTxt {
-  font-size:.9em;
+  font-size:1.2em;
   color:white;
   margin-top:-30px;
+  font-weight: bold;
+}
+
+p.smallTxt a {
+  color:#ccc;
+}
+
+p.smallTxt a:hover {
+  color:#fff;
 }
 /* PROGRAM
 ----------------------------------------------- */
@@ -872,6 +881,9 @@ p.smallTxt {
 #footer .emu-mark a {
   background-position: center -158px;
 }
+
+
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
