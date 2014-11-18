@@ -540,7 +540,7 @@ a:focus {
 /* HEADER
 ----------------------------------------------- */
 #header {
-  background: #b23c27 url(../images/banner_1.png) repeat-x center 0;
+  background: #b23c27 url(../images/banner-bg-red.png) repeat-x center 0;
   height: 516px;
   /* 456 + 60 (from tab nav) */
 
