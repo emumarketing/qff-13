@@ -540,15 +540,17 @@ a:focus {
 /* HEADER
 ----------------------------------------------- */
 #header {
-  background: #b23c27 url(../images/banner-bg-red.png) repeat-x center 0;
-  height: 516px;
+  background: #b23c27 url(../images/banner-bg-red.png);
+  height: 100%;
+  background-repeat: repeat-x;
+  background-size: contain;
   /* 456 + 60 (from tab nav) */
 
   width: 100%;
   z-index: -99999;
 }
 #logo {
-  background: url(../images/logo-dark.png) no-repeat center 0;
+  background: url(../images/logo-dark.png)    center 0;
   float: left;
   height: 106px;
   margin: 0;
@@ -621,9 +623,9 @@ p.smallTxt a {
 p.smallTxt a:hover {
   color:#fff;
 }
-/* PROGRAM
+/* SUBMISSIONS
 ----------------------------------------------- */
-#program {
+#submit {
   padding-bottom: 99px;
 }
 #tabs-nav {
@@ -634,14 +636,14 @@ p.smallTxt a:hover {
   position: relative;
   top: -61px;
 }
-#program .nav {
+#submit .nav {
   list-style: none;
   padding-left: 0;
   /*   text-transform: uppercase; */
 
   width: 100%;
 }
-#program .nav li {
+#submit .nav li {
   border-top: 3px solid transparent;
   float: left;
   -moz-transition: all 0.05s ease-in-out;
@@ -650,7 +652,7 @@ p.smallTxt a:hover {
   transition: all 0.05s ease-in-out;
   width: 33.33333%;
 }
-#program .nav a {
+#submit .nav a {
   color: #7B7B7B;
   display: inline-block;
   font-size: 21px;
@@ -659,7 +661,7 @@ p.smallTxt a:hover {
   text-decoration: none;
   width: 100%;
 }
-#program .nav li.current {
+#submit .nav li.current {
   background: #fff;
   border-top: 3px solid #ff783f;
   box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1), -1px 0px 0px rgba(0, 0, 0, 0.1), 1px 0px 0px rgba(0, 0, 0, 0.1);
@@ -670,11 +672,11 @@ p.smallTxt a:hover {
   background: #f9f9f9;
   border-top: 3px solid #aaa;
 }
-#program .nav li:hover a {
+#submit .nav li:hover a {
   /*   border-bottom: 2px solid @primaryColor; */
 
 }
-#program .nav a.current {
+#submit .nav a.current {
   color: #666;
 }
 /* SINGLE */
@@ -686,7 +688,7 @@ p.smallTxt a:hover {
   margin-bottom: 16px;
   width: 100%;
 }
-#program .time {
+#submit .time {
   color: #a9a9a9;
   float: left;
   font-size: 14px;
@@ -697,7 +699,7 @@ p.smallTxt a:hover {
 
   width: 14.814814814814813%;
 }
-#program h3 {
+#submit h3 {
   color: #4B5755;
   display: inline-block;
   font-size: 24px;
@@ -710,7 +712,7 @@ p.smallTxt a:hover {
   /*     width: 460 / 540% * 100; */
 
 }
-#program .on h3 {
+#submit .on h3 {
   /*   background: url(../images/arrows.png) no-repeat right -24px; */
 
 }
